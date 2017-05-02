@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Practice</title>
+	<style type="text/css" media="screen">
+		.the-box {
+			width: 600px;
+			height: 300px;
+			background: -webkit-radial-gradient(red,orange,yellow,green,blue,indigo,violet);
+			color: white;
+			padding: 10px;
+			border: 5px solid green;
+			margin: 10px;
+			box-sizing: border-box;
+			display: inline-block;
+			text-align: center;
+			text-shadow: 5px 2px black;
+			vertical-align: top;
+		}	
+
+		.the-box.one {
+			border-radius: 10px 150px 150px 150px;
+	
+		}
+
+		.the-box.two {
+			border-radius: 150px 10px 150px 150px;
+
+		}
+		.the-box.three {
+			border-radius: 150px 150px 150px 10px;
+
+		}
+		.the-box.four {
+			border-radius: 150px 150px 10px 150px;
+
+		}				
+		#the-block,#the-block2{
+			width: 50%;
+		}
+		#container {
+			width: 50%;
+		}
+		.meme-holder {
+			border: 5px red solid;
+			width: 300px;
+			float: right;
+		}
+		img {
+			max-width: 100%;
+		}
+		#nav-bar {
+			height: 40px;
+			width: 100%;
+			background-color: turquoise;
+			color: black;
+			position: fixed;
+			top: 0;
+			left: 0;
+			font-family: Verdana;
+			text-align: center;
+			font-size: 35px;
+		}
+		.footer {
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			background: linear-gradient(magenta,black);
+			color: white;
+			font-family: Helvetica;
+			text-align: center;
+		}
+		body {
+			position: relative;
+		}
+	</style>
+</head>
+<body>
+	<div id="nav-bar">
+		this is the main navbar
+	</div>
+
+
+
+	<div id="container">
+		<div id="the-block">
+			some text in a block
+		</div>
+		<div id="the-block2">
+			some text in a block
+		</div>
+	</div>
+	<!-- inline elements:
+	1. will respect padding and margin but not top and bottom -->
+	<!-- 2. no problem what's on the left or the right -->
+	<!-- with a few exceptions, namely image, you cannot tell them how big to be (height or width) -->
+	<!-- will gladly ignore all block level rules unless forced otherwise -->
+	 <!-- a cool image about how i feel... -->
+	<div class="the-box">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</div>	
+	 <div class="meme-holder">
+		<image src="https://slack-imgs.com/?c=1&url=http%3A%2F%2Fstarecat.com%2Fcontent%2Fwp-content%2Fuploads%2Ftwo-states-of-every-programmer-i-am-god-i-have-no-idea-what-im-doing.jpg" />
+	</div>
+	<div class="meme-holder">
+		<image src ="https://slack-imgs.com/?c=1&url=http%3A%2F%2Fstarecat.com%2Fcontent%2Fwp-content%2Fuploads%2Ftwo-states-of-every-programmer-i-am-god-i-have-no-idea-what-im-doing.jpg" />
+	</div>
+
+
+	<div class="the-box one">I'm a box!!</div><div class="the-box two">I'm a box!!</div><div class="the-box three">I'm a box!!</div><div class="the-box four">I'm a box!!</div>
+<!-- a block level element by default takes up all space to the right and the left possible
+<!-- it can have a height and width -->
+<!-- nothing can be on either side(by default, because it's 100%) and it ignores margin -->
+<!-- if you change the size, it will still take up 100%, but the rest outside of teh width, will be margin -->
+	<div class="footer">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</div>
+
+
+
+</body>
+</html>
